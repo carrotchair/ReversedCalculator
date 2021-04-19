@@ -1,6 +1,8 @@
 package com.DataFlair.mycalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     TextView edittext1;
     TextView edittext2;
     TextView edittext3;
-    TextView edittext4;
     boolean Multiply, deci;
     Button button_0, button_1, button_2, button_3, button_4, button_5, button_6, button_7, button_8, button_9,
             button_Mul, button_Rand, button_Equ, button_Del;
@@ -27,27 +28,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button_0 = (Button) findViewById(R.id.b0);
-        button_1 = (Button) findViewById(R.id.b1);
-        button_2 = (Button) findViewById(R.id.b2);
-        button_3 = (Button) findViewById(R.id.b3);
-        button_4 = (Button) findViewById(R.id.b4);
-        button_5 = (Button) findViewById(R.id.b5);
-        button_6 = (Button) findViewById(R.id.b6);
-        button_7 = (Button) findViewById(R.id.b7);
-        button_8 = (Button) findViewById(R.id.b8);
-        button_9 = (Button) findViewById(R.id.b9);
-        button_Mul = (Button) findViewById(R.id.bmul);
-        button_Rand = (Button) findViewById(R.id.brand);
-        button_Del = (Button) findViewById(R.id.buttonDel);
-        button_Equ = (Button) findViewById(R.id.buttoneql);
+        button_0 = findViewById(R.id.b0);
+        button_1 = findViewById(R.id.b1);
+        button_2 = findViewById(R.id.b2);
+        button_3 = findViewById(R.id.b3);
+        button_4 = findViewById(R.id.b4);
+        button_5 = findViewById(R.id.b5);
+        button_6 = findViewById(R.id.b6);
+        button_7 = findViewById(R.id.b7);
+        button_8 = findViewById(R.id.b8);
+        button_9 = findViewById(R.id.b9);
+        button_Mul = findViewById(R.id.bmul);
+        button_Rand = findViewById(R.id.brand);
+        button_Del = findViewById(R.id.buttonDel);
+        button_Equ = findViewById(R.id.buttoneql);
 
-        edittext1 = (TextView) findViewById(R.id.display);
-        edittext2 = (TextView) findViewById(R.id.display2);
-        edittext3 = (TextView) findViewById(R.id.display4);
-        //edittext4 = (TextView) findViewById(R.id.display5);
+        edittext1 = findViewById(R.id.display);
+        edittext2 = findViewById(R.id.display2);
+        edittext3 = findViewById(R.id.display4);
 
         button_1.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edittext2.setText(edittext2.getText() + "1");
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_2.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edittext2.setText(edittext2.getText() + "2");
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_3.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edittext2.setText(edittext2.getText() + "3");
@@ -69,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_4.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edittext2.setText(edittext2.getText() + "4");
@@ -76,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_5.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edittext2.setText(edittext2.getText() + "5");
@@ -83,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_6.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edittext2.setText(edittext2.getText() + "6");
@@ -90,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_7.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edittext2.setText(edittext2.getText() + "7");
@@ -97,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_8.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edittext2.setText(edittext2.getText() + "8");
@@ -104,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_9.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edittext2.setText(edittext2.getText() + "9");
@@ -111,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_0.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edittext2.setText(edittext2.getText() + "0");
@@ -130,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_Rand.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 List<Integer> givenList = Arrays.asList(2,3,4,5,6,7,8,9);
@@ -140,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button_Equ.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 if (Multiply) {
